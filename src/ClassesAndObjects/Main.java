@@ -12,12 +12,10 @@ public class Main {
     System.out.print("Input another number: ");
     int number2 = sc.nextInt();
 
-    int sum = op.add(number1, number2);
-    int difference = op.subtract(number1, number2);
-    int product = op.multiply(number1, number2);
-    int quotient = op.divide(number1, number2);
-    
-    op.showResults(sum, difference, product, quotient);
+    System.out.println("The sum is: " + op.add(number1, number2));
+    System.out.println("The difference is: " + op.subtract(number1, number2));
+    System.out.println("The product is: " + op.multiply(number1, number2));
+    System.out.println("The quotient is: " + op.divide(number1, number2));
 
     sc.close();
   }
