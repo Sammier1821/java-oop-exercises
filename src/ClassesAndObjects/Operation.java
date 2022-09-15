@@ -1,43 +1,31 @@
 package ClassesAndObjects;
 
-import java.util.Scanner;
-
-public class Operation {
-  Scanner sc = new Scanner(System.in);
-  
+public class Operation {  
   /* Attributes */
-  int number1;
-  int number2;
   int sum;
   int difference;
   int product;
   int quotient;
   
   /* Methods */
-  // Method to input two numbers
-  public void readNumbers() {
-    System.out.print("Input a number: ");
-    number1 = sc.nextInt();
-    System.out.print("Input another number: ");
-    number2 = sc.nextInt();
-  }
+  
   // Method to add both numbers
-  public void sum() {
+  public void add(int number1, int number2) {
     sum = number1 + number2;
   }
   
   // Method to subtract both numbers
-  public void difference() {
+  public void subtract(int number1, int number2) {
     difference = number1 - number2;
   }
   
   // Method to multiply both numbers
-  public void product() {
+  public void multiply(int number1, int number2) {
     product = number1 * number2;
   }
 
   // Method to divide both numbers
-  public void quotient() {
+  public void divide(int number1, int number2) {
     quotient = number1 / number2;
   }
 
