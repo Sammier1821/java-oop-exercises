@@ -12,11 +12,13 @@ public class Main {
     System.out.print("Input another number: ");
     int number2 = sc.nextInt();
 
-    op.add(number1, number2);
-    op.subtract(number1, number2);
-    op.multiply(number1, number2);
-    op.divide(number1, number2);
+    int sum = op.add(number1, number2);
+    int difference = op.subtract(number1, number2);
+    int product = op.multiply(number1, number2);
+    int quotient = op.divide(number1, number2);
     
-    op.showResults();
+    op.showResults(sum, difference, product, quotient);
+
+    sc.close();
   }
 }
